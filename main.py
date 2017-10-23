@@ -57,7 +57,7 @@ def newpost():
             db.session.refresh(new_post)
             return redirect('/blog?id='+ str(new_post.id))            
     
-    return render_template('newpost.html', page_title = "Add A Post", title = title, 
+    return render_template('newpost.html', page_title = "Add Post", title = title, 
         title_error = title_error, body = body, body_error = body_error)
 
 if __name__ == '__main__':
